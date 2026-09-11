@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@400;600;700&display=swap');
+
+/* Base Styles */
+html, body, [data-testid="stAppViewContainer"] {
+    font-family: 'Poppins', sans-serif !important;
+    background: radial-gradient(circle at 50% 15%, #251633 0%, #121421 55%, #090a10 100%) !important;
+    color: #f1f2f6 !important;
+    overflow-x: hidden !important;
+}
+
+[data-testid="stHeader"] {
+    background-color: transparent !important;
+}
+
+/* Container */
+.main .block-container {
+    max-width: 860px !important;
+    padding-top: 2rem !important;
+    padding-bottom: 4rem !important;
+}
+
+/* Streamlit Container with border */
+[data-testid="stVerticalBlockBorderWrapper"] {
+    background: rgba(25, 22, 38, 0.65) !important;
+    backdrop-filter: blur(14px) !important;
+    -webkit-backdrop-filter: blur(14px) !important;
+    border-radius: 22px !important;
+    border: 1px solid rgba(255, 182, 193, 0.25) !important;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.45) !important;
+    padding: 1.8rem !important;
+    margin-bottom: 1.8rem !important;
+    transition: all 0.3s ease !important;
+}
+
+[data-testid="stVerticalBlockBorderWrapper"]:hover {
+    border-color: rgba(255, 182, 193, 0.45) !important;
+    box-shadow: 0 15px 40px rgba(255, 105, 180, 0.15), 0 12px 35px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Glowing Title */
+.birthday-title {
+    font-family: 'Cinzel', serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: center;
+    background: linear-gradient(135deg, #ffb6c1 0%, #ff69b4 50%, #ffe4e1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.2rem;
+    text-shadow: 0 0 30px rgba(255, 105, 180, 0.4);
+    letter-spacing: 2px;
+}
+
+.japanese-quote {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.15rem;
+    color: #ffd1dc;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+/* Hero Card Showcase */
+.hero-card {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    padding: 8px;
+    background: linear-gradient(145deg, rgba(255, 182, 193, 0.2), rgba(30, 24, 48, 0.6));
+    border: 1px solid rgba(255, 182, 193, 0.35);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 40px rgba(255, 105, 180, 0.25);
+    margin: 1.5rem auto;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.hero-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7), 0 0 50px rgba(255, 105, 180, 0.35);
+}
+
+.hero-img {
+    width: 100%;
+    border-radius: 18px;
+    display: block;
+    object-fit: cover;
+}
+
+.hero-badge {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(18, 20, 33, 0.88);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 182, 193, 0.45);
+    color: #ffccd5;
+    padding: 8px 24px;
+    border-radius: 50px;
+    font-size: 0.92rem;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
+}
+
+/* Section Card Titles */
+.card-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1.6rem;
+    color: #ffb6c1;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Letter Style */
+.letter-box {
+    background: linear-gradient(145deg, rgba(35, 28, 48, 0.85), rgba(22, 20, 32, 0.92)) !important;
+    border-left: 4px solid #ff69b4 !important;
+    border-radius: 18px !important;
+    padding: 2.2rem !important;
+    font-family: 'Playfair Display', serif !important;
+    font-size: 1.15rem !important;
+    line-height: 1.95 !important;
+    color: #fce4ec !important;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5) !important;
+    position: relative !important;
+    margin: 1rem 0 !important;
+}
+
+.letter-box::before {
+    content: "🌸";
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.8rem;
+    opacity: 0.7;
+}
+
+.letter-sign {
+    font-family: 'Poppins', sans-serif;
+    text-align: right;
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #ffb7c5;
+    font-weight: 500;
+}
+
+/* Poke Box Animation */
+.poke-result {
+    background: linear-gradient(135deg, rgba(255, 105, 180, 0.18), rgba(74, 20, 140, 0.35));
+    border: 1px solid rgba(255, 105, 180, 0.5);
+    border-radius: 18px;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    animation: fadeInPoke 0.8s ease forwards;
+    box-shadow: 0 10px 30px rgba(255, 105, 180, 0.2);
+}
+
+@keyframes fadeInPoke {
+    0% {
+        opacity: 0;
+        transform: scale(0.92);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Interactive Cake Container */
+.cake-container {
+    text-align: center;
+    padding: 1.8rem 1rem;
+    background: rgba(30, 24, 45, 0.55);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 182, 193, 0.25);
+    margin: 1rem 0;
+}
+
+.candle-flame {
+    animation: flicker 1.2s infinite alternate ease-in-out;
+    transform-origin: 100px 38px;
+}
+
+@keyframes flicker {
+    0% { transform: scale(1) rotate(-1deg); filter: drop-shadow(0 0 8px #ffeb3b); }
+    50% { transform: scale(1.1) rotate(2deg); filter: drop-shadow(0 0 15px #ff9800); }
+    100% { transform: scale(0.92) rotate(-2deg); filter: drop-shadow(0 0 10px #ffeb3b); }
+}
+
+/* Reason Cards */
+.reason-card {
+    background: rgba(36, 30, 52, 0.55);
+    border: 1px solid rgba(255, 182, 193, 0.2);
+    border-radius: 16px;
+    padding: 1.2rem 1.4rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.reason-card:hover {
+    background: rgba(48, 38, 70, 0.75);
+    border-color: rgba(255, 105, 180, 0.45);
+    transform: translateX(6px);
+}
+
+/* Falling Sakura Petals */
+.sakura-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 99999;
+}
+
+.petal {
+    position: absolute;
+    background: linear-gradient(135deg, #ffc0cb 0%, #ff69b4 100%);
+    border-radius: 150% 0 150% 0;
+    opacity: 0.75;
+    pointer-events: none;
+    animation: fallAndSway linear infinite;
+}
+
+@keyframes fallAndSway {
+    0% {
+        top: -10%;
+        transform: translateX(0) rotate(0deg) scale(0.7);
+    }
+    50% {
+        transform: translateX(60px) rotate(180deg) scale(1);
+    }
+    100% {
+        top: 105%;
+        transform: translateX(-30px) rotate(360deg) scale(0.8);
+    }
+}
+
+/* Streamlit Button Tweaks */
+div.stButton > button {
+    background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%) !important;
+    color: white !important;
+    font-weight: 600 !important;
+    border-radius: 14px !important;
+    border: none !important;
+    padding: 0.65rem 1.8rem !important;
+    font-size: 1.02rem !important;
+    box-shadow: 0 4px 15px rgba(255, 117, 140, 0.4) !important;
+    transition: all 0.3s ease !important;
+    width: 100%;
+}
+
+div.stButton > button:hover {
+    transform: translateY(-2px) scale(1.02) !important;
+    box-shadow: 0 6px 22px rgba(255, 117, 140, 0.6) !important;
+}
+
+/* Hide markdown code block copy styling if any leak */
+pre, code {
+    white-space: pre-wrap !important;
+}
+
+/* Footer */
+.footer-text {
+    text-align: center;
+    color: #a4b0be;
+    font-size: 0.85rem;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 182, 193, 0.15);
+}
