@@ -43,11 +43,6 @@ if "wishes" not in st.session_state:
             "sender": "Hasim",
             "wish": "Barakallah Fii Umrik Nur Hidayah! Semoga sehat selalu, makin sukses, dan tercapai semua impianmu! Semoga hari-harimu selalu secerah senyummu. Tetap jadi pribadi yang baik dan menginspirasi! 🌸✨",
             "time": "Hari ini"
-        },
-        {
-            "sender": "Uchiha Sasuke",
-            "wish": "また今度な... Terima kasih telah menjadi sosok terhangat dan tempat terbaik untuk pulang.",
-            "time": "Hari ini"
         }
     ]
 
