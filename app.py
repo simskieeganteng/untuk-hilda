@@ -62,8 +62,8 @@ render_sakura_petals(30)
 
 # Sidebar Controls & Audio
 with st.sidebar:
-    st.markdown("### 🌸 Kotak Pengaturan & Musik")
-    st.write("Atur suasana perayaan ulang tahun Nur Hidayah:")
+    st.markdown("### 🌸 Musik")
+    st.write("Untuk Nur Hidayah:")
 
     # Background Music Settings
     enable_music = st.checkbox("Putar Musik Latar (BGM) 🎵", value=True)
